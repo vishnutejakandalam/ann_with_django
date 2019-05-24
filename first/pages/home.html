@@ -1,0 +1,21 @@
+{%extends 'main.html'%}
+{%block major%}
+<form action="pre" align="center">
+    <h1>The current time and date are : {{n}}</h1>
+    fill the details to predict the customer:
+    <br>credit score:<input type="number" name="cs">
+    <br>Country: <input type="text" name="cou">
+    <br>Gender: <input type="radio" name="gen" value="1">Male
+    <input type="radio" name="gen" value="0">Female
+    <br>Age:<input type="number" name="ag">
+    <br>Tenure: <input type="number" name="ten">
+    <br> Balence: <input type="number" name="bal">
+    <br>  Number of Products: <input type="number" name="nop">
+    <br> Credit Card <input type="radio" name="cre" value="1">Yes
+    <input type="radio" name="cre" value="0">No
+    <br> Active Member: <input type="radio" name="act" value="1">Yes
+    <input type="radio" name="act" value="0">No
+    <br>Estimated Salary:<input type="float" name="est">
+    <br><input type="submit" value="predict">
+</form>
+{%endblock%}
